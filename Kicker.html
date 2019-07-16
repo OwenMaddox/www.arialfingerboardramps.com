@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Standard Kicker-Arial Fingerboard Ramps</title>
+</head>
+<body class="bg">
+    
+    
+    <!--Classes for logo container-->
+    <style>
+        .grid-container-a{
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            padding: 10px;
+        }
+        .grid-container-b{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 10px;
+        }
+        .grid-item-a {
+            background-color: white;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .grid-item-b{
+            background-color: white;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .bg{
+            background-color: black;
+        }
+        .home-a{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+        }
+        .catalog-a{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hover-a {
+            color: black
+        }
+        .hover-a:hover {
+            color: gray;
+        }
+    </style>
+
+
+<!--Logo Container-->
+    <div class="grid-container-a">
+        
+        <div class="grid-item-a">
+            <a href="Homepage.html">
+                <img src="Arial Fingerboard.PNG" alt="logo">
+            </a>
+        </div>
+        
+        <div class="grid-item-a">
+            <div class="grid-container-b">
+                <div class="grid-item-b">
+                    <a class="home-a , hover-a"  href="Homepage.html">Home</a>
+                </div>
+                <div class="grid-item-b"></div> 
+                
+                <div class="grid-item-b">
+                    <a class="catalog-a , hover-a" href="Catalog.html">Catalog</a>
+                </div>  
+                
+                <div class="grid-item-b"></div>   
+                <div class="grid-item-b"></div>
+                <div class="grid-item-b"></div> 
+                    
+            </div>
+        </div>
+        
+        <div class="grid-item-a"></div>  
+        <div class="grid-item-a"></div>  
+    </div>
+    
+    
+    <div class="title">Kicker With Rail</div>
+        
+
+    <!--Classes for prices and description-->
+
+    <style>
+        .title{
+            color: black;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+        }
+        .grid-container-c{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 20px;
+        }
+        .grid-item-c {
+            background-color: white;
+            font-size: 30px;
+            
+        }
+        .imgsz{
+            width: 550px;
+            height: 350px;
+            margin-left: 200px;
+        }
+        .floatleft{
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            
+        }
+        .Buynow{
+        background-color: rgb(26, 106, 197);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-right: 10px;
+        }
+        .invis{
+            color: white;
+        }
+        .gbth{
+            text-decoration: none;
+            float: right;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: black;
+        }
+        .hover-back{
+            color: black
+        }
+        .hover-back:hover{
+            color: gray;
+        }
+        .hover-buy{
+            background-color: rgb(26, 106, 197);
+        }
+        .hover-buy:hover{
+            background-color: rgb(57, 145, 228);
+        }
+        .total{
+            color: green;
+        }
+    </style>
+
+
+<!-- The discription and prices-->
+    <div class="grid-container-c">
+
+        <div class="grid-item-c">
+           
+            <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:75%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      window.onload = myFunction({
+          alt: "",
+          src: "Kicker.jpg"
+        });
+      </script>
+        </div>  
+
+        <div class="grid-item-c , floatleft">
+            Standard Kicker
+            <div class="floatleft"> 
+                
+                <div class="invis">yo</div>
+                
+                $15 + $7 Shipping</div>
+
+                <div class="invis">yo</div>
+
+                <div class="total">$22 Total</div>
+                
+            <div class="invis">yo</div>
+
+            <a class="Buynow , hover-buy">Buy now</a>
+            
+            <div class="invis">yo</div>
+
+            <div class="floatleft">4 x 8 inch wood Kicker that adds a smooth transition to your park.</div>
+        
+        </div>
+
+        <div class="grid-item-c">
+        
+     <!-- The two columns -->
+      <div class="row">
+        <div class="column , startimg">
+          <img class="startimg" src="Kicker.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="Kicker 2.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        
+      </div></div>
+
+        <div class="grid-item-c , invis">yo</div>
+
+        <div class="grid-item-c , invis">yo</div>
+
+        <div class="grid-item-c , invis">yo</div>
+
+        <div class="grid-item-c">
+            <a class="gbth , hover-back" href="Homepage.html"> 🠔 Go back to Homepage</a>
+        </div>
+
+        <div class="grid-item-c"></div>
+
+        <div class="grid-item-c"></div>
+
+        <div class="grid-item-c"></div>
+
+    </div>
+
+
+
+<!--TAB image gallery / image pop up-->
+
+    <style>
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+      
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+      
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8; 
+        cursor: pointer; 
+      }
+      
+      .column img:hover {
+        opacity: 1;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* The expanding image container */
+      .container {
+        position: relative;
+      }
+      
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+      
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+      </style>
+      </head>
+      <body>
+      
+      
+      
+      
+      
+      
+
+</body>
+</html>
