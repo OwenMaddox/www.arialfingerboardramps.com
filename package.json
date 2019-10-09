@@ -1,0 +1,25 @@
+{
+  "name": "www.arialfingerboardramps.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "format": "prettier \"src/**/*.{js, html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OwenMaddox/www.arialfingerboardramps.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OwenMaddox/www.arialfingerboardramps.com/issues"
+  },
+  "homepage": "https://github.com/OwenMaddox/www.arialfingerboardramps.com#readme"
+}
