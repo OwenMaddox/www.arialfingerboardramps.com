@@ -4,190 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Products-Arial Fingerboard Ramps</title>
+    <title>Arial Fingerboard Ramps</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg">
-    <style>
-            .grid-container-a{
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                padding: 10px;
-            }
-            .grid-container-b{
-                display: grid;
-                grid-template-columns: auto auto auto auto auto auto;
-                padding: 10px;
-            }
-            .grid-item-a {
-                background-color: white;
-                padding: 20px;
-                font-size: 30px;
-                text-align: center;
-            }
-            .grid-item-b{
-                background-color: white;
-                padding: 20px;
-                font-size: 30px;
-                text-align: center;
-            }
-            .bg{
-                background-color: black;
-            }
-            .home-a{
-                text-align: center;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                color: black;
-            }
-            .catalog-a{
-                text-align: center;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            }
-            a{
-                text-decoration: none;
-            }
-            .hover-a {
-                color: black
-            }
-            .hover-a:hover {
-                color: gray;
-            }
-        </style>
+<body class="bg-black">
         
-        <div class="grid-container-a">
+    <div class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64">
+        <div class="w-1/4 ">
+            <a href="index.html">
+                <img  src="Arial Fingerboard.PNG" class="sm:h-16 md:h-20 lg:h-32 xl:h-64" alt="logo">
+            
                 
-            <div class="grid-item-a">
-                <a href="index.html">
-                    <img src="Arial Fingerboard.PNG" alt="Logo">
-                </a>
-            </div>
-                
-            <div class="grid-item-a">
-                <div class="grid-container-b">
-                    <div class="grid-item-b">
-                        <a class="home-a , hover-a"  href="index.html">Home</a>
-                    </div>
-                    <div class="grid-item-b"></div> 
-                        
-                    <div class="grid-item-b">
-                        <a class="catalog-a , hover-a" href="Catalog.html">Catalog</a>
-                    </div>  
-                        
-                    <div class="grid-item-b" class="title"></div>
-                    <div class="grid-item-b" class="title"></div> 
-                    <div class="grid-item-b" class="title"></div> 
-                        
-                </div>
-            </div>
-                
-            <div class="grid-item-a"></div>  
-                <div class="grid-item-a"></div>  
+            </a>
         </div>
-        <h1 class="title">Products</h1>
+        <div class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ">
+            <a class="text-black hover:text-gray-400" href="index.html">Home</a>
+        </div>
+        <div class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+            <a class="text-black hover:text-gray-400" href="Catalog.html">Catalog</a>
+        </div>
+        <div class="w-1/4  "></div>
+    </div>
 
-        <style>
-            .title{
-                color: white;
-                text-align: center;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 50px;
-            }
-        </style>
+    <div class="flex mb-4">
+        <div class="w-screen text-center items-center h-20 sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-white">Products</div>
+    </div>  
 
-        <style>
-            .title{
-                color: white;
-                text-align: center;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 50px;
-            }
-            .grid-container-b {
-            display: grid;
-            grid-template-columns: auto auto auto auto auto;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            }
-            .grid-item-b {
-            background-color: white;
+    <div class="flex mr-6 ml-6 mx-6 bg-white h-40 sm:h-40 md:h-56 lg:h-64 xl:h-64 ">
+        <div class="w-1/3 h-12 sm:ml-16 md:ml-20 lg:ml-40 xl:ml-48 ">
+            <a class="" href="Buy Kicker With Rail.html">
+                <img class="sm:h-20 md:h-32 lg:h-40 xl:h-40" src="kicker with rail 2 gen2.jpg" alt="Kicker With Rail">
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4 ">Kicker With Rail</div>
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4">$20</div>
+            </a>
+        </div>
+        <div class="w-1/3 h-12 sm:ml-16 ">
+            <a class="" href="Kicker.html">
+                <img class="sm:h-20 md:h-32 lg:h-40 xl:h-40" src="real new kicker.jpg" alt="Kicker">
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4 ">Standard Kicker</div>
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4">$15</div>
+            </a>
+        </div>
+        <div class="w-1/3 h-12 sm:ml-16 ">
+            <a class="" href="Mega Kicker Gap buy.html">
+                <img class="sm:h-20 md:h-32 lg:h-40 xl:h-40" src="Mega Kicker Gap.jpg" alt="Mega Kicker Gap">
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4 ">Mega Kicker Gap</div>
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4">$40</div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="flex mr-6 ml-6 mt-8 mx-6 bg-white h-40 sm:h-40 md:h-56 lg:h-64 xl:h-64 ">
+        <div class="w-1/3 h-12 sm:ml-16 md:ml-20 lg:ml-40 xl:ml-48 ">
+            <a class="" href="8 inch long rail.html">
+                <img class="sm:h-20 md:h-32 lg:h-40 xl:h-40" src="Rail 8 inch.jpg" alt="Kicker With Rail">
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4 ">Wood Rail</div>
+                <div class="sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl ml-4">$8</div>
+            </a>
+        </div>
+        <div class="w-1/3 h-12 sm:ml-16 ">
             
-            font-size: 30px;
-            text-align: center;
-            }
-            .imgsz{
-                width: 400px;
-                height: 250px;
-            }
-            .fontfamily{
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                color: black;
-            }
-            .featuredsz{
-                font-size: 23px;
-            }
-        </style>
-
-
-
-        <div class="grid-container-b">
+        </div>
+        <div class="w-1/3 h-12 sm:ml-16 ">
             
-            <div class="grid-item-b">
-                <a href="Buy Kicker With Rail.html">
-                    <img class="imgsz" src="kicker with rail 2 gen2.jpg" alt="Ramp">
-                    <div class="fontfamily , featuredsz">Kicker With Rail</div>
-                    <div class="fontfamily , featuredsz">$20</div>
-                    
-                </a>
-            </div>
-            
-            <div class="grid-item-b"></div>
-            
-            <div class="grid-item-b">
-                <a href="8 inch long rail.html">
-                    <img class="imgsz" src="Rail 8 inch.jpg">
-                    <div class="fontfamily , featuredsz">Wood Rail</div>
-                    <div class="fontfamily , featuredsz">$8</div>
-                </a>
-            </div>
-            
-            <div class="grid-item-b"></div>
-            
-            <div class="grid-item-b">
-                <a href="Mega Kicker Gap buy.html">
-                    <img class="imgsz" src="Mega Kicker Gap.jpg" alt="Ramp">
-                    <div class="fontfamily , featuredsz"> Mega Kicker Gap</div>
-                    <div class="fontfamily , featuredsz">$40</div>
-                    
-                </a>
-            </div>
-            
-            
-            <div class="grid-item-b">
-                <a href="Kicker.html">
-                    <img class="imgsz" src="real new kicker.jpg" alt="Ramp">
-                    <div class="fontfamily , featuredsz">Standard Kicker</div>
-                    <div class="fontfamily , featuredsz">$15</div>
-                </a>
-            </div>
-            
-            <div class="grid-item-b"></div>
-            <!--
-                <div class="grid-item-b">
-                
-                <a href="Kicker.html">
-                <img class="imgsz" src="Kicker.jpg" alt="Kicker">
-                <div class="fontfamily , featuredsz">Standard Kicker</div>
-                <div class="fontfamily , featuredsz">$15</div>
-                </a>
-            </div>
-            -->
-            
-
-            <div class="grid-item-b"></div>
-
-            <div class="grid-item-b"></div>
-
-            <div class="grid-item-b"></div>
-
-            
-        </div>    
+        </div>
+    </div>
+    
 </body>
 </html>
