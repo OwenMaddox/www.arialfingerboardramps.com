@@ -1,36 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Arial Fingerboard Ramps</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-black">
-        
-    <div class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64">
-        <div class="w-1/4 ">
-            <a href="index.html">
-                <img  src="Arial Fingerboard.PNG" class="sm:h-16 md:h-20 lg:h-32 xl:h-64" alt="logo">
-            
-                
-            </a>
-        </div>
-        <div class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ">
-            <a class="text-black hover:text-gray-400" href="index.html">Home</a>
-        </div>
-        <div class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-            <a class="text-black hover:text-gray-400" href="Catalog.html">Catalog</a>
-        </div>
-        <div class="w-1/4  "></div>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div
+      class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64"
+    >
+      <div class="w-1/4 ">
+        <a href="index.html">
+          <img
+            src="Arial Fingerboard.PNG"
+            class="sm:h-16 md:h-20 lg:h-32 xl:h-64"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl "
+      >
+        <a class="text-black hover:text-gray-400" href="index.html">Home</a>
+      </div>
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+      >
+        <a class="text-black hover:text-gray-400" href="Catalog.html"
+          >Catalog</a
+        >
+      </div>
+      <div class="w-1/4  "></div>
     </div>
 
     <div class="flex mb-4">
-        <div class="w-screen text-center items-center h-20 sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-white"></div>
-    </div>  
+      <div
+        class="w-screen text-center items-center h-20 sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-white"
+      ></div>
+    </div>
 
     <div class="flex mb-4">
-        <div class="w-1/2 bg-gray-400 h-12"></div>
-        <div class="w-1/2 bg-gray-500 h-12"></div>
+      <div class="w-full bg-white"></div>
     </div>
+
+    <div
+      class="flex mb-4 flex items-center  mb-4 m-6 bg-white sm:h-32 md:h-40 lg:h-56 xl:h-64"
+    >
+      <div class="w-1/2 bg-white">
+        <span onclick="this.parentElement.style.display='">&times;</span>
+        <img id="expandedImg" style="width: 39%;" />
+        <div id="imgtext"></div>
+        <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+          window.onload = myFunction({
+            alt: "",
+            src: "kicker with rail 2 gen2.jpg"
+          });
+        </script>
+        <div
+          class="flex mb-4 mt-10 bg-white sm:h-12 md:h-16 lg:h-20 xl:h-32 w-32"
+        >
+          <div class="w-1/2">
+            <img
+              src="kicker with rail 2 gen2.jpg"
+              style="width:110%"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="w-1/2 ml-6">
+            <img
+              src="kicker with rail 3 gen 2.jpg"
+              style="width:110%"
+              onclick="myFunction(this);"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-1/2 bg-white">
+        <div
+          class="leading-loose float-left ml-6 sm:ml-16 md:ml-20 lg:ml-32 xl:ml-40  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+        >
+          Kicker with Rail
+          <div>
+            $12 + $12 Shipping
+          </div>
+          <div class="text-green-500">
+            $24 Total
+          </div>
+          <div>
+            <form
+              target="paypal"
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+            >
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="DCYSPXH3GLJ4Y"
+              />
+              <button
+                class=" px-4 bg-blue-600 rounded text-white hover:bg-blue-400"
+                type="submit"
+                border="0"
+                name="submit"
+                alt="PayPal - The safer, easier way to pay online!"
+              >
+                Add To Cart
+              </button>
+            </form>
+          </div>
+          <div>
+            8 x 4 inch wood Kicker with a smooth 1 inch tall rail attached
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
