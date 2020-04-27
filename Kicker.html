@@ -11,6 +11,7 @@
     />
   </head>
   <body class="bg-black">
+    <div></div>
     <div
       class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64"
     >
@@ -45,84 +46,86 @@
     </div>
 
     <div class="flex mb-4">
-      <div class="w-full bg-white"></div>
-    </div>
+      <div class="w-full bg-white  sm: md: lg: xl:">
+        <div>
+          <div
+            class="flex mb-4 flex items-center  mb-4 m-6 bg-white sm: md: lg: xl:"
+          >
+            <div class="w-1/2 bg-white">
+              <img id="expandedImg" style="width: 40%;" />
+              <div id="imgtext"></div>
+              <script>
+                function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+                }
+                window.onload = myFunction({
+                  alt: "",
+                  src: "real new kicker.jpg"
+                });
+              </script>
+              <div class="flex mb-4 mt-10 bg-white sm: md: lg: xl: w-32">
+                <div class="w-1/2">
+                  <img
+                    src="real new kicker.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="w-1/2 ml-6">
+                  <img
+                    src="real kicker2.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
+            </div>
 
-    <div
-      class="flex mb-4 flex items-center  mb-4 m-6 bg-white sm:h-32 md:h-40 lg:h-56 xl:h-64"
-    >
-      <div class="w-1/2 bg-white">
-        <img id="expandedImg" style="width: 40%;" />
-        <div id="imgtext"></div>
-        <script>
-          function myFunction(imgs) {
-            var expandImg = document.getElementById("expandedImg");
-            var imgText = document.getElementById("imgtext");
-            expandImg.src = imgs.src;
-            imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
-          }
-          window.onload = myFunction({
-            alt: "",
-            src: "real new kicker.jpg"
-          });
-        </script>
-        <div
-          class="flex mb-4 mt-10 bg-white sm:h-12 md:h-16 lg:h-20 xl:h-32 w-32"
-        >
-          <div class="w-1/2">
-            <img
-              src="real new kicker.jpg"
-              style="width:110%"
-              onclick="myFunction(this);"
-            />
-          </div>
-          <div class="w-1/2 ml-6">
-            <img
-              src="real kicker2.jpg"
-              style="width:110%"
-              onclick="myFunction(this);"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="w-1/2 bg-white">
-        <div
-          class="leading-loose float-left ml-6 sm:ml-16 md:ml-20 lg:ml-32 xl:ml-40  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-        >
-          Standard Kicker
-          <div>
-            $10 + $12 Shipping
-          </div>
-          <div class="text-green-500">
-            $22 Total
-          </div>
-          <div>
-            <form
-              target="paypal"
-              action="https://www.paypal.com/cgi-bin/webscr"
-              method="post"
-            >
-              <input type="hidden" name="cmd" value="_s-xclick" />
-              <input
-                type="hidden"
-                name="hosted_button_id"
-                value="MZG2ZTRHJ3VYW"
-              />
-              <button
-                class=" px-4 bg-blue-600 rounded text-white hover:bg-blue-400"
-                type="submit"
-                border="0"
-                name="submit"
-                alt="PayPal - The safer, easier way to pay online!"
+            <div class="w-1/2 bg-white">
+              <div
+                class="leading-loose float-left ml-6 sm:ml-16 md:ml-20 lg:ml-32 xl:ml-40  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
               >
-                Add To Cart
-              </button>
-            </form>
-          </div>
-          <div>
-            8 x 4 inch wood Kicker that adds a smooth transition to your park
+                Standard Kicker
+                <div>
+                  $10 + $12 Shipping
+                </div>
+                <div class="text-green-500">
+                  $22 Total
+                </div>
+                <div>
+                  <form
+                    target="paypal"
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                  >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input
+                      type="hidden"
+                      name="hosted_button_id"
+                      value="MZG2ZTRHJ3VYW"
+                    />
+
+                    <button
+                      class=" px-4 bg-blue-600 rounded text-white hover:bg-blue-400"
+                      type="submit"
+                      border="0"
+                      name="submit"
+                      alt="PayPal - The safer, easier way to pay online!"
+                    >
+                      Add To Cart
+                    </button>
+                  </form>
+                </div>
+                <div>
+                  8 x 4 inch wood Kicker that adds a smooth transition to your
+                  park
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
