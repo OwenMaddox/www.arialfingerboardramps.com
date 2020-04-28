@@ -1,324 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>8 inch Rail-Arial Fingerboard Ramps</title>
-</head>
-<body class="bg">
-    
-    <style>
-        .grid-container-a{
-            display: grid;
-            grid-template-columns: auto auto auto auto ;
-            padding: 10px;
-        }
-        .grid-container-b{
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto;
-            padding: 10px;
-        }
-        .grid-item-a {
-            background-color: white;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .grid-item-b{
-            background-color: white;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .bg{
-            background-color: black;
-        }
-        .home-a{
-            text-align: center;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: black;
-        }
-        .catalog-a{
-            text-align: center;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        a{
-            text-decoration: none;
-        }
-        .hover-a {
-            color: black
-        }
-        .hover-a:hover {
-            color: gray;
-        }
-    </style>
-
-    <div class="grid-container-a">
-        
-        <div class="grid-item-a">
-            <a href="index.html">
-                <img src="Arial Fingerboard.PNG" alt="logo">
-            </a>
-        </div>
-        
-        <div class="grid-item-a">
-            <div class="grid-container-b">
-                <div class="grid-item-b">
-                    <a class="home-a , hover-a"  href="index.html">Home</a>
-                </div>
-                <div class="grid-item-b"></div> 
-                
-                <div class="grid-item-b">
-                    <a class="catalog-a , hover-a" href="Catalog.html">Catalog</a>
-                </div>  
-                
-                <div class="grid-item-b"></div>   
-                <div class="grid-item-b"></div>
-                <div class="grid-item-b"></div> 
-                    
-            </div>
-        </div>
-        
-        <div class="grid-item-a"></div>  
-        <div class="grid-item-a"></div>  
-    </div>
-    
-    
-    <div class="title">Kicker With Rail</div>
-        
-
-    
-
-    <style>
-        .title{
-            color: black;
-            text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 50px;
-        }
-        .grid-container-c{
-            display: grid;
-            grid-template-columns: auto auto;
-            padding: 20px;
-        }
-        .grid-item-c {
-            background-color: white;
-            font-size: 30px;
-            
-        }
-        .imgsz{
-            width: 550px;
-            height: 350px;
-            margin-left: 200px;
-        }
-        .floatleft{
-            text-align: left;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 30px;
-            
-        }
-        .Buynow{
-        background-color: rgb(26, 106, 197);
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 5px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-right: 10px;
-        }
-        .invis{
-            color: white;
-        }
-        .gbth{
-            text-decoration: none;
-            float: right;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 25px;
-            color: black;
-        }
-        .hover-back{
-            color: black
-        }
-        .hover-back:hover{
-            color: gray;
-        }
-        .hover-buy{
-            background-color: rgb(26, 106, 197);
-        }
-        .hover-buy:hover{
-            background-color: rgb(57, 145, 228);
-        }
-        .total{
-            color: green;
-        }
-    </style>
-
-    <div class="grid-container-c">
-
-        <div class="grid-item-c">
-           
-            <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:75%">
-        <div id="imgtext"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arial Fingerboard Ramps</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div></div>
+    <div
+      class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64"
+    >
+      <div class="w-1/4 ">
+        <a href="index.html">
+          <img
+            src="Arial Fingerboard.PNG"
+            class="sm:h-16 md:h-20 lg:h-32 xl:h-64"
+            alt="logo"
+          />
+        </a>
       </div>
-      
-      <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-      }
-      window.onload = myFunction({
-          alt: "",
-          src: "Rail 8 inch.jpg"
-        });
-      </script>
-        </div>  
-
-        <div class="grid-item-c , floatleft">
-            Standard Rail
-            <div class="floatleft"> 
-                <div class="invis">yo</div>
-                $5 + $10 Shipping</div>
-
-                <div class="invis">yo</div>
-
-                <div class="total">$15 Total</div>
-                
-            <div class="invis">yo</div>
-
-            
-                
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="A6PQYWZA7E4D8">
-                    <button class="Buynow , hover-buy" type="submit" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">Add To Cart</button>
-                    
-                </form>
-
-               
-                    
-                    
-            
-            <div class="invis">yo</div>
-
-            <div class="floatleft">A 1 inch tall and 8 inch long Rail made of wood.</div>
-        </div>
-
-        <div class="grid-item-c">
-        <!-- The four columns -->
-      <div class="row">
-        <div class="column , startimg">
-          <img class="startimg" src="Rail 8 inch.jpg" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="Rail 2.jpg" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="Rail 3.jpg" style="width:100%" onclick="myFunction(this);">
-        </div>
-        
-      </div></div>
-
-        <div class="grid-item-c , invis">yo</div>
-
-        <div class="grid-item-c , invis">yo</div>
-
-        <div class="grid-item-c , invis">yo</div>
-
-        <div class="grid-item-c">
-            <a class="gbth , hover-back" href="index.html"> < Go back to Homepage</a>
-        </div>
-
-        <div class="grid-item-c"></div>
-
-        <div class="grid-item-c"></div>
-
-        <div class="grid-item-c"></div>
-
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl "
+      >
+        <a class="text-black hover:text-gray-400" href="index.html">Home</a>
+      </div>
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+      >
+        <a class="text-black hover:text-gray-400" href="Catalog.html"
+          >Catalog</a
+        >
+      </div>
+      <div class="w-1/4  "></div>
     </div>
 
+    <div class="flex mb-4">
+      <div
+        class="w-screen text-center items-center h-20 sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-white"
+      ></div>
+    </div>
 
+    <div class="flex mb-4">
+      <div class="w-full bg-white  sm: md: lg: xl:">
+        <div>
+          <div
+            class="flex mb-4 flex items-center  mb-4 m-6 bg-white sm: md: lg: xl:"
+          >
+            <div class="w-1/2 bg-white">
+              <img id="expandedImg" style="width: 40%;" />
+              <div id="imgtext"></div>
+              <script>
+                function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+                }
+                window.onload = myFunction({
+                  alt: "",
+                  src: "Rail gen 2 pic 1.jpg"
+                });
+              </script>
+              <div class="flex mb-4 mt-10 bg-white sm: md: lg: xl: w-32">
+                <div class="w-1/2">
+                  <img
+                    src="Rail gen 2 pic 1.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="w-1/2 ml-6">
+                  <img
+                    src="Rail gen 2 pic 2.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
+            </div>
 
-<!--TAB image gallery / image pop up-->
+            <div class="w-1/2 bg-white">
+              <div
+                class="leading-loose float-left ml-6 sm:ml-16 md:ml-20 lg:ml-32 xl:ml-40  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+              >
+                Kicker With Rail
+                <div>
+                  $5 + $10 Shipping
+                </div>
+                <div class="text-green-500">
+                  $15 Total
+                </div>
+                <div>
+                  <form
+                    target="paypal"
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                  >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input
+                      type="hidden"
+                      name="hosted_button_id"
+                      value="A6PQYWZA7E4D8"
+                    />
 
-    <style>
-    
-    * {
-        box-sizing: border-box;
-      }
-      
-      body {
-        margin: 0;
-        font-family: Arial;
-      }
-      
-      /* The grid: Four equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 25%;
-        padding: 10px;
-      }
-      
-      /* Style the images inside the grid */
-      .column img {
-        opacity: 0.8; 
-        cursor: pointer; 
-      }
-      
-      .column img:hover {
-        opacity: 1;
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      
-      /* The expanding image container */
-      .container {
-        position: relative;
-      }
-      
-      /* Expanding image text */
-      #imgtext {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        color: white;
-        font-size: 20px;
-      }
-      
-      /* Closable button inside the expanded image */
-      .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
-      }
-      </style>
-      </head>
-      <body>
-      
-      
-      
-      
-      
-      
-
-</body>
+                    <button
+                      class=" px-4 bg-blue-600 rounded text-white hover:bg-blue-400"
+                      type="submit"
+                      border="0"
+                      name="submit"
+                      alt="PayPal - The safer, easier way to pay online!"
+                    >
+                      Add To Cart
+                    </button>
+                  </form>
+                </div>
+                <div>
+                  1 inch tall and 8 inch long wooden rail
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
