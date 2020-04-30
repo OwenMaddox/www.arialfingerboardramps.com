@@ -8,14 +8,3 @@ module.exports = {
     }
   }
 };
-
-module.exports = {
-  theme: {
-    spacing: {
-      sm: "10px",
-      md: "15px",
-      lg: "15px",
-      xl: "20px"
-    }
-  }
-};
