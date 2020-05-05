@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arial Fingerboard Ramps</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div></div>
+    <div
+      class="flex items-center mb-4 m-6 bg-white sm:h-16 md:h-20 lg:h-32 xl:h-64"
+    >
+      <div class="w-1/4 ">
+        <a href="index.html">
+          <img
+            src="Arial Fingerboard.PNG"
+            class="sm:h-16 md:h-20 lg:h-32 xl:h-64"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl "
+      >
+        <a class="text-black hover:text-gray-400" href="index.html">Home</a>
+      </div>
+      <div
+        class="w-1/4 linkhover sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+      >
+        <a class="text-black hover:text-gray-400" href="Catalog.html"
+          >Catalog</a
+        >
+      </div>
+      <div class="w-1/4  "></div>
+    </div>
+
+    <div class="flex mb-4">
+      <div
+        class="w-screen text-center items-center h-20 sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-white"
+      ></div>
+    </div>
+
+    <div class="flex mb-4">
+      <div class="w-full bg-white  sm: md: lg: xl:">
+        <div>
+          <div
+            class="flex mb-4 flex items-center  mb-4 m-6 bg-white sm: md: lg: xl:"
+          >
+            <div class="w-1/2 bg-white">
+              <img id="expandedImg" style="width: 40%;" />
+              <div id="imgtext"></div>
+              <script>
+                function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+                }
+                window.onload = myFunction({
+                  alt: "",
+                  src: "outer curved bench pic 1.jpg"
+                });
+              </script>
+              <div class="flex mb-4 mt-10 bg-white sm: md: lg: xl: w-32">
+                <div class="w-1/2">
+                  <img
+                    src="outer curved bench pic 1.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="w-1/2 ml-6">
+                  <img
+                    src="outer curved bench pic 2.jpg"
+                    style="width:110%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-1/2 bg-white">
+              <div
+                class="leading-loose float-left ml-6 sm:ml-16 md:ml-20 lg:ml-32 xl:ml-40  sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+              >
+                Outer Curved Bench
+                <div>
+                  $10 + $12 Shipping
+                </div>
+                <div class="text-green-500">
+                  $22 Total
+                </div>
+                <div>
+                  <form
+                    target="paypal"
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                  >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input
+                      type="hidden"
+                      name="hosted_button_id"
+                      value="UMXGJJAEDTDNL"
+                    />
+
+                    <button
+                      class=" px-4 bg-blue-600 rounded text-white hover:bg-blue-400"
+                      type="submit"
+                      border="0"
+                      name="submit"
+                      alt="PayPal - The safer, easier way to pay online!"
+                    >
+                      Add To Cart
+                    </button>
+                  </form>
+                </div>
+                <div>
+                  8 x 4 inch wood benched that is curved on the outside.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
